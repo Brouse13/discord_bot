@@ -17,7 +17,7 @@ public class MongoDB {
 
     public void connect() {
         ConnectionString connString = new ConnectionString(
-                System.getenv(MONGO_DB)
+                System.getenv("MONGO_DB")
         );
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connString)
