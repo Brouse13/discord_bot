@@ -26,7 +26,7 @@ public class Main {
     public static void main(String[] args) throws LoginException, Exception {
         log.createLog();
         log.insertLogLine("Inicializando bot de discord", Main.class);
-        JDA jda = JDABuilder.createDefault("NTEwOTM2MjM1NTQ0NTQzMjMz.XxcGgA.Jwik_p_xDQBIt-A0X16pDzoSKPw")
+        JDA jda = JDABuilder.createDefault(System.getenv("TOKEN"))
                 .setActivity(Activity.playing("DBC"))
                 .setStatus(OnlineStatus.ONLINE)
                 .build();
