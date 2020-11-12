@@ -17,7 +17,7 @@ public class MongoDB {
 
     public void connect() {
         ConnectionString connString = new ConnectionString(
-                "mongodb+srv://Brouse_13:miaumix13@cluster0.y8oxo.mongodb.net/DiscordBot?retryWrites=true&w=majority"
+                "sdfsdfsfsd"
         );
         MongoClientSettings settings = MongoClientSettings.builder()
                 .applyConnectionString(connString)
